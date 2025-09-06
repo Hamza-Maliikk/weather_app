@@ -14,7 +14,17 @@ function submitButton() {
     alert("Invalid address");
   }
 }
+let API_KEY = "a9a3666bc82ce5ca84917c0f148d6f8c"
 
-async function (){
-    await fetch('')
+async function getData(city){
+  try{
+    let response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`)
+    let data = await response.json()
+    console.log(data)
+  }
+  catch(error){
+      console.log("Error ion weather",error)
+  }
 }
+
+getData("Karachi")
