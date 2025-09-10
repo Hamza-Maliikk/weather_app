@@ -1,25 +1,46 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
-/* *{
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    /* width: 100px; */
-    /* background: linear-gradient(180deg, #3D5E5C, #7FC4C0); */
-    
-/* .bg-img{ */
-    /* padding-top: 10px; */
-/*     
-    align-items: center;
-    display: flex;
-    justify-content: center;
-} */
-/* .bg-img img{
-    height: 600px;
-    width: 1100px;
-} */
-/* .glass1{
-    background: #FFFF;
-    width: 200px;
-    height: 100px;
-} */
+* {
+  margin: 0;
+  padding: 0;
+}
+#container {
+  background-image: linear-gradient(50deg, #446261 , #8bc8c6);
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.input_weather{
+    padding-top: 80px;
+}
+#input_box{
+    font-family: Poppins;
+    padding: 10px ;
+    width: 300px;
+    position: absolute;
+}
+#input_box::placeholder{
+    font-family: Poppins;
+}
+
+#input_button{
+    position: relative;
+    padding: 7px;
+    left: 272px;
+    outline: none;
+    font-family: Poppins;
+    /* left: 10px; */
+}
+#result{
+    position: absolute;
+    color: white;
+    left: 50px;
+    top: 300px;
+    font-family: Poppins;
+}
+.temp {
+  font-family: Poppins;
+  font-size: 80px;
+
+}
