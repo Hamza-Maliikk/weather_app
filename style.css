@@ -33,7 +33,8 @@
     /* left: 10px; */
 }
 #result{
-    position: absolute;
+    display: flex;
+    /* position: absolute; */
     color: white;
     left: 50px;
     top: 300px;
@@ -43,4 +44,8 @@
   font-family: Poppins;
   font-size: 80px;
 
+}
+.icon{
+    width: 50%;
+    height: 50%;
 }
