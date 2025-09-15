@@ -4,48 +4,110 @@
   margin: 0;
   padding: 0;
 }
+
 #container {
-  background-image: linear-gradient(50deg, #446261 , #8bc8c6);
+  background-image: linear-gradient(50deg, #446261, #8bc8c6);
   background-repeat: no-repeat;
   height: 100vh;
   display: flex;
   justify-content: center;
 }
-.input_weather{
-    padding-top: 80px;
+.input_weather {
+  padding-top: 80px;
 }
-#input_box{
-    font-family: Poppins;
-    padding: 10px ;
-    width: 300px;
-    position: absolute;
+#input_box {
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.32);
+  color: white;
+  font-family: Poppins;
+  padding: 10px;
+  width: 500px;
+  height: 20px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  outline: none;
 }
-#input_box::placeholder{
-    font-family: Poppins;
+#input_box::placeholder {
+  font-family: Poppins;
+  color: gray;
 }
 
-#input_button{
-    position: relative;
-    padding: 7px;
-    left: 272px;
-    outline: none;
-    font-family: Poppins;
-    /* left: 10px; */
+#input_button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  position: relative;
+  left: 580px;
+  bottom: 12px;
+  outline: none;
+  font-family: Poppins;
 }
-#result{
-    display: flex;
-    /* position: absolute; */
-    color: white;
-    left: 50px;
-    top: 300px;
-    font-family: Poppins;
+#result {
+  background: rgba(255, 255, 255, 0.2); /* lighter transparency */
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  width: 500px;
+  margin-top: 200px !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin: 100px;
+  position: relative; /* not fixed so it doesn’t overlap */
+  padding: 20px;
+  z-index: 1; /* keep above background */
 }
+.icons img {
+   
+  position: fixed;
+  bottom: 200px;
+  left: 400px;
+  width: 20%;
+  cursor: pointer;
+  transition: transform 0.4s ease, filter 0.4s ease;
+
+  animation: float 3s ease-in-out infinite;
+}
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.temperature {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-family: Poppins, sans-serif;
+  font-size: 18px;
+  position: relative;
+  left: -120px;
+}
+
+
+
+
 .temp {
   font-family: Poppins;
   font-size: 80px;
+}
 
-}
-.icon{
-    width: 50%;
-    height: 50%;
-}
+
