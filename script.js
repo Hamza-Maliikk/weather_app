@@ -22,14 +22,16 @@ async function getData(city) {
 
     let name = data.name;
     let result = document.getElementById("result");
+    let bg = document.getElementById('bg')
+
     let main = data.weather[0].main;
     let description = data.weather[0].description;
-    let bg = ""
     let icon = "";
+    let bgimg = "";
 
     if (main === "Clear") {
       icon = "assets/images/clear/clear.png";
-      bg = "./assets/images/clear/clear_bg.png"
+      bgimg = "./assets/images/clear/clear_bg.png";
     } else if (main === "Clouds") {
       icon = "assets/images/clouds/cloud.png";
     } else if (main === "Rain") {
@@ -38,7 +40,11 @@ async function getData(city) {
       icon = "assets/images/Thunderstorm/thunder.png";
     }
 
+    bg.innerHTML = `
+    <img class="bg_img" src=${bgimg} alt="">
+    `
     result.innerHTML = `
+    
     <div class="icons">
       <img src=${icon} alt="">
       </div>
@@ -53,7 +59,6 @@ async function getData(city) {
       <p>Feels like ${data.main.feels_like}</p>  
       <p>${name}</p> 
       </div>
-   
       `;
   } catch (error) {
     console.log("Error in weather", error);

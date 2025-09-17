@@ -25,6 +25,7 @@
   color: white;
   font-family: Poppins;
   padding: 10px;
+  padding-left: 20px;
   width: 500px;
   height: 20px;
   position: absolute;
@@ -45,10 +46,10 @@
   font-size: 15px;
   font-weight: 500;
   position: relative;
-  left: 580px;
+  left: 590px;
   bottom: 12px;
+  font-size: 26px;
   outline: none;
-  font-family: Poppins;
 }
 #result {
   background: rgba(255, 255, 255, 0.2); /* lighter transparency */
@@ -59,7 +60,6 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
   color: white;
   width: 500px;
-  margin-top: 200px !important;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -70,7 +70,6 @@
   z-index: 1; /* keep above background */
 }
 .icons img {
-   
   position: fixed;
   bottom: 200px;
   left: 400px;
@@ -101,13 +100,20 @@
   position: relative;
   left: -120px;
 }
-
-
-
-
 .temp {
   font-family: Poppins;
   font-size: 80px;
 }
-
-
+.bg_img {
+  position: fixed; /* Stays fixed behind content */
+  top: 0;
+  left: 0;
+  width: 100vw; /* Full screen width */
+  height: 100vh; /* Full screen height */
+  object-fit: cover; /* Keeps aspect ratio, fills screen */
+  z-index: -1;
+}
+/* .bg{
+  width: ;
+  z-index: 1;
+} */
