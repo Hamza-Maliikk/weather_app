@@ -46,28 +46,29 @@
   font-size: 15px;
   font-weight: 500;
   position: relative;
-  left: 590px;
+  left: 610px;
   bottom: 12px;
   font-size: 26px;
   outline: none;
 }
 #result {
-  background: rgba(255, 255, 255, 0.2); /* lighter transparency */
+  background: rgba(255, 255, 255, 0.2);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.3);
   color: white;
+  margin-top: 180px !important;
   width: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   margin: 100px;
-  position: relative; /* not fixed so it doesn’t overlap */
+  position: relative;
   padding: 20px;
-  z-index: 1; /* keep above background */
+  z-index: 1;
 }
 .icons img {
   position: fixed;
@@ -100,20 +101,23 @@
   position: relative;
   left: -120px;
 }
+.wth_details p{
+  position: relative;
+  left: -150px;
+  font-family: poppins;
+  display: flex;
+  line-height: 35px !important;
+
+}
 .temp {
   font-family: Poppins;
   font-size: 80px;
 }
 .bg_img {
-  position: fixed; /* Stays fixed behind content */
-  top: 0;
+  position: fixed;
   left: 0;
-  width: 100vw; /* Full screen width */
-  height: 100vh; /* Full screen height */
-  object-fit: cover; /* Keeps aspect ratio, fills screen */
-  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 0.2;
 }
-/* .bg{
-  width: ;
-  z-index: 1;
-} */
