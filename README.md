@@ -27,6 +27,8 @@ OpenWeatherMap API for real-time weather data
 👉 It’s a small project, but it was a great way to practice working with APIs, DOM manipulation, and dynamic styling in JavaScript.
 
 ![image alt](https://github.com/Hamza-Maliikk/weather_app/blob/efb295707e774fa6e0d55afdad93d1f4eaac0053/Cloud.png)
+![image alt](https://github.com/Hamza-Maliikk/weather_app/blob/master/Morning.png?raw=true)
+![image alt](https://github.com/Hamza-Maliikk/weather_app/blob/master/Clear.png?raw=true)
 
 
 
